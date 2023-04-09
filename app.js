@@ -10,12 +10,12 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Descrition',
+        name: 'Description',
         message: 'Project Description?',
     },
     {
         type: 'input',
-        name: 'Instaltion',
+        name: 'Installation',
         message: 'Installation Instructions?',
     },
     {
@@ -35,7 +35,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Github',
+        name: 'GitHub',
         message: 'For Questions(GitHub)?',
     },
     {

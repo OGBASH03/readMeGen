@@ -12,7 +12,7 @@ class MarkDown {
 - [License](#License)
 
 ## Title
-$
+${answers.Title}
 
 ## Description
 ${answers.Description}
@@ -22,6 +22,9 @@ ${answers.Usage}
 
 ## Installation
 ${answers.Installation}
+
+## Contribution
+${answers.Contributing}
 
 ## Questions
 ${answers.Email}
