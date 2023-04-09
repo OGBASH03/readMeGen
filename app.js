@@ -23,7 +23,7 @@ const questions = [
     }, 
     {
         type: 'input',
-        name: 'Contributions',
+        name: 'Contributing',
         message: 'Contribution Info?',
     },
     {
@@ -44,6 +44,20 @@ const questions = [
         filter(val) {
             return val.toLowerCase(); 
         }
-    }, 
+    }
     
 ]
+
+// RUN QUERRY FUNCTION
+async function runList() {
+    return inquirer.prompt(questions)
+    .then((answers)=>{
+        console.log(answers)
+        return answers
+    })
+    .catch((error)=>{
+        console.log(error)
+    })
+}
+
+ runList()
