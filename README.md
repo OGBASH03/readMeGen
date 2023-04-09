@@ -1,7 +1,5 @@
-class MarkDown {
-    static generateReadMe(answers){
-    return `
-# ${answers.title}
+
+# undefined
 
 ## Table of Content
 - [Project descrition](#Description)
@@ -11,26 +9,19 @@ class MarkDown {
 - [Questions](#Questions)
 - [License](#License)
 
-## Title
-$
-
 ## Description
-${answers.Description}
+undefined
 
 ## Usage
-${answers.Usage}
+execite good
 
 ## Installation
-${answers.Installation}
+undefined
 
 ## Questions
-${answers.Email}
-${answers.GitHub}
+bb
+undefined
 
 ## License
-${answers.License}
-    `
-    }
-}
-
-module.exports = MarkDown
+apache
+    

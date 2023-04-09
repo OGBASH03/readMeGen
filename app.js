@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const fs = require("fs");
+const MarkDown = require('./LIB/readMeGen.js')
 
 const questions = [
     {
@@ -52,8 +54,14 @@ const questions = [
 async function runList() {
     return inquirer.prompt(questions)
     .then((answers)=>{
-        console.log(answers)
-        return answers
+        const mark = MarkDown.generateReadMe(answers)
+        fs.writeFile('README.md', mark, function(err) {
+             if(err){
+                console.log('Could not save file')
+             } else {
+                console.log('Success!: New README.md file generated inside current folder')
+             }
+        })
     })
     .catch((error)=>{
         console.log(error)
