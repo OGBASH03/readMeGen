@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require("fs");
 const MarkDown = require('./LIB/readMeGen.js')
-
+// QUESTIONS PROMPTED IN TERMINAL
 const questions = [
     {
         type: 'input',
@@ -30,6 +30,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'testInstru',
+        message: 'Test Instructions?',
+    },
+    {
+        type: 'input',
         name: 'Email',
         message: 'For Questions(Email)?',
     },
@@ -41,7 +46,7 @@ const questions = [
     {
         type: 'list',
         name: 'License',
-        message: 'Licencse?',
+        message: 'License?',
         choices: ['MIT', 'Apache', 'GNPLv3'],
         filter(val) {
             return val.toLowerCase(); 
