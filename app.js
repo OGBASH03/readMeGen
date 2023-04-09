@@ -3,27 +3,47 @@ const inquirer = require('inquirer');
 const questions = [
     {
         type: 'input',
-        name: 'title',
-        message: 'Project title',
+        name: 'Title',
+        message: 'Project Title?',
     },
     {
         type: 'input',
-        name: 'descrition',
-        message: 'Project description?',
+        name: 'Descrition',
+        message: 'Project Description?',
     },
     {
         type: 'input',
-        name: 'instaltion',
-        message: 'Installation instructions?',
+        name: 'Instaltion',
+        message: 'Installation Instructions?',
     },
     {
         type: 'input',
-        name: 'usage',
-        message: 'Project usage?',
+        name: 'Usage',
+        message: 'Project Usage?',
     }, 
     {
         type: 'input',
-        name: 'description',
-        message: 'Project description?',
+        name: 'Contributions',
+        message: 'Contribution Info?',
     },
+    {
+        type: 'input',
+        name: 'Email',
+        message: 'For Questions(Email)?',
+    },
+    {
+        type: 'input',
+        name: 'Github',
+        message: 'For Questions(GitHub)?',
+    },
+    {
+        type: 'list',
+        name: 'License',
+        message: 'Licencse?',
+        choices: ['MIT', 'Apache', 'GNPLv3'],
+        filter(val) {
+            return val.toLowerCase(); 
+        }
+    }, 
+    
 ]
